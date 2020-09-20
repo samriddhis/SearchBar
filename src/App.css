@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+.searchForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.searchBarDiv {
+  display: flex;
+  margin-top: 20px;
+  width: 300px;
+  background-color: #f1f3f4;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.searchIcon {
+  justify-content: center;
+  align-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.searchInput {
+  width: 100%;
+  padding: 10px;
+  padding-left: 0;
+  outline: none;
+  border: none;
+  background-color: #f1f3f4;
+}
+input::placeholder {
+  color: #c0c0c0;
+  font-weight: 500;
+  font-size: 16px;
+}
+.searchListDiv {
+  width: 300px;
+  height: 400px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow-y: scroll;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+}
+.itemDiv {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-bottom-color: lightgray;
+}
+.itemDiv:hover{
+  background-color: #FBF2D2;
+}
+.itemIdText {
+  font-size: 14px;
+  font-weight: bold;
+  color: #696969;
+}
+.itemNameText{
+  font-size: 12px;
+  font-weight: 500;
+  color:gray;
+}
+.itemText {
+  font-size: 12px;
+  color:gray;
+}
+.noRecordDiv{
+  width: 300px;
+  height: 150px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.noRecordTxt{
+  font-size: 16px;
+  font-weight: 600;
+  color:gray;
 }
