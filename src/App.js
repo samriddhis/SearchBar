@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SearchComponent from './SearchComponent';
+import CenterComponent from "./CenterComponent"
 import "./App.css";
 
 class App extends Component {
